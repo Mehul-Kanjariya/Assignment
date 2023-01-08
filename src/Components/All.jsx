@@ -43,7 +43,7 @@ const All = () => {
             </a>
             })}
         </div>
-        <button disabled={page==1} onClick={()=>{setPage(page-1)}}>Prev</button>
+        <button disabled={page===1} onClick={()=>{setPage(page-1)}}>Prev</button>
         <button>{page}</button>
         <button onClick={()=>setPage(page+1)}>Next</button>
     </div>
